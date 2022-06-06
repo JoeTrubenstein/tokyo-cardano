@@ -5,3 +5,4 @@
  */
 
 import './src/styles/globals.css'
+import "@fontsource/raleway"
