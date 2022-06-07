@@ -39,7 +39,9 @@ module.exports = {
       fuchsia: colors.fuchsia,
       pink: colors.pink,
       rose: colors.rose,
-      nightBack:"#0E172A"
+      nightBack:"#0E172A",
+      babyBlue:"#0BA5E9",
+      nightBlue:"#37BCF8"
     }),
     columns: {
       auto: 'auto',

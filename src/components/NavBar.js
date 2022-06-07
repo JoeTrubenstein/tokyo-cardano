@@ -6,16 +6,16 @@ import { Disclosure, Menu, Transition } from "@headlessui/react"
 import { MenuIcon, XIcon } from "@heroicons/react/outline"
 import icon from "../images/TCLogo.png"
 
-const user = {
-  name: "Tom Cook",
-  email: "tom@example.com",
-  imageUrl:
-    "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-}
+// const user = {
+//   name: "Tom Cook",
+//   email: "tom@example.com",
+//   imageUrl:
+//     "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+// }
 const navigation = [
-  { name: "Home", href: "#", current: true },
-  { name: "Speakers", href: "#", current: false },
-  { name: "Blog", href: "#", current: false },
+  { name: "Home", href: "../#", current: true },
+  { name: "Speakers", href: "../#speakerArea", current: false },
+  { name: "Blog", href: "#../blogArea", current: false },
 ]
 // const userNavigation = [
 //   { name: 'Your Profile', href: '#' },
@@ -41,7 +41,7 @@ export default function Example() {
         ```
       */}
       <div className="min-h-full">
-        <Disclosure as="nav" className="dark:bg-nightBack bg-white border-b-2">
+        <Disclosure as="nav" className="dark:bg-nightBack bg-white border-b dark:border-slate-600">
           {({ open }) => (
             <>
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -62,8 +62,8 @@ export default function Example() {
                             href={item.href}
                             className={classNames(
                               item.current
-                                ? "bg-gray-200 text-gray-700"
-                                : "text-gray-700 hover:bg-gray-200 hover:text-white",
+                                ? "bg-babyBlue text-white"
+                                : "text-gray-700 dark:text-white hover:bg-babyBlue hover:text-white",
                               "px-3 py-2 rounded-md text-sm font-medium"
                             )}
                             aria-current={item.current ? "page" : undefined}
@@ -93,7 +93,7 @@ export default function Example() {
                       >
                         {darkMode ? (
                           <svg
-                            className="w-8 h-8 md:w-10 md:h-10"
+                            className="w-8 h-8 md:w-10 md:h-10 text-babyBlue dark:text-nightBlue"
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
                             viewBox="0 0 24 24"
@@ -108,7 +108,7 @@ export default function Example() {
                           </svg>
                         ) : (
                           <svg
-                            className="w-8 h-8 md:w-10 md:h-10"
+                            className="w-8 h-8 md:w-10 md:h-10 text-babyBlue dark:text-nightBlue"
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
                             viewBox="0 0 24 24"
@@ -164,7 +164,7 @@ export default function Example() {
                   </div>
                   <div className="-mr-2 flex md:hidden">
                     {/* Mobile menu button */}
-                    <Disclosure.Button className="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+                    <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md focus:outline-none  ">
                       <span className="sr-only">Open main menu</span>
                       {open ? (
                         <XIcon className="block h-6 w-6" aria-hidden="true" />
@@ -180,7 +180,7 @@ export default function Example() {
               </div>
 
               <Disclosure.Panel className="md:hidden">
-                <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <div className="px-2 text-center pt-2 pb-3 space-y-1 sm:px-3">
                   {navigation.map(item => (
                     <Disclosure.Button
                       key={item.name}
@@ -188,9 +188,9 @@ export default function Example() {
                       href={item.href}
                       className={classNames(
                         item.current
-                          ? "bg-gray-900 text-white"
-                          : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                        "block px-3 py-2 rounded-md text-base font-medium"
+                          ? "text-babyBlue dark:text-nightBlue"
+                          : "text-gray-700 dark:text-white",
+                        "block px-3 py-2 rounded-md font-medium"
                       )}
                       aria-current={item.current ? "page" : undefined}
                     >
@@ -198,7 +198,7 @@ export default function Example() {
                     </Disclosure.Button>
                   ))}
                 </div>
-                <div className="pt-4 pb-3 border-t border-gray-700">
+                <div className="pt-4 pb-3">
                   <div className="flex px-5 justify-center">
                     {/* <div className="flex-shrink-0">
                       <img className="h-10 w-10 rounded-full" src={user.imageUrl} alt="" />
