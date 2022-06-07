@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SeoWrapper from "../components/SeoWrapper"
 import Hero from "../components/Hero"
-// import Blog from "../components/Blog"
+import Blog from "../components/Blog"
 import Speakers from "../components/Speakers"
 import SummitFeatures from "../components/SummitFeatures"
 import CnftFeed from "../components/CnftFeed"
@@ -15,7 +15,7 @@ const IndexPage = () => (
       <Speakers />
       <SummitFeatures />
       <CnftFeed />
-      {/* <Blog /> */}
+      <Blog />
     </Layout>
   </div>
 )
