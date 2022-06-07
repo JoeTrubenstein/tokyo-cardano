@@ -3,7 +3,7 @@ import React from "react";
 const VideoBlock = () => {
     return (
         <div className="relative flex items-center justify-center h-screen mb-12 overflow-hidden">
-            <div className="relative z-10 text-2xl text-white bg-purple-300 bg-opacity-50 rounded-xl">
+            <div className="relative z-10 text-2xl text-light-mode-leading bg-purple-300 bg-opacity-50 rounded-xl">
                 Welcome to my site!
             </div>
             <video autoPlay loop muted className="absolute w-auto min-w-full h-screen max-w-none">

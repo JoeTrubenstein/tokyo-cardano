@@ -2,57 +2,111 @@ import React from "react";
 
 const Blog = () => {
     return (
-<section className="text-gray-600 body-font">
-  <div className="container px-5 py-24 mx-auto">
-    <div className="flex flex-col">
-      <div className="h-1 bg-gray-200 rounded overflow-hidden">
-        <div className="w-24 h-full bg-indigo-500" />
-      </div>
-      <div className="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
-        <h1 className="sm:w-2/5 text-gray-900 font-medium title-font text-2xl mb-2 sm:mb-0">Space The Final Frontier</h1>
-        <p className="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">Street art subway tile salvia four dollar toast bitters selfies quinoa yuccie synth meditation iPhone intelligentsia prism tofu. Viral gochujang bitters dreamcatcher.</p>
-      </div>
-    </div>
-    <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-      <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
-        <div className="rounded-lg h-64 overflow-hidden">
-          <img alt="content" className="object-cover object-center h-full w-full" src="https://dummyimage.com/1203x503" />
-        </div>
-        <h2 className="text-xl font-medium title-font text-gray-900 mt-5">Shooting Stars</h2>
-        <p className="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
-        <a className="text-indigo-500 inline-flex items-center mt-3">Learn More
-          <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-            <path d="M5 12h14M12 5l7 7-7 7" />
-          </svg>
+<section className="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-24 max-w-7xl">
+  <div className="pb-4 border-b border-gray-600">
+    <h3 className="text-xl font-semibold leading-6 text-gray-800">Latest Entries</h3>
+  </div>
+  <div className="relative mx-auto max-w-7xl">
+    <div className="grid max-w-lg gap-8 mx-auto mt-12 lg:grid-cols-2 lg:max-w-none">
+      <div className="flex flex-col mb-12 overflow-hidden cursor-pointer">
+        <a href="/blog-post">
+          <div className="flex-shrink-0">
+            <img className="object-cover w-full h-48 rounded-lg" src="https://source.unsplash.com/random" alt="blog excerpt content" />
+          </div>
         </a>
-      </div>
-      <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
-        <div className="rounded-lg h-64 overflow-hidden">
-          <img alt="content" className="object-cover object-center h-full w-full" src="https://dummyimage.com/1204x504" />
+        <div className="flex flex-col justify-between flex-1">
+          <a href="/blog-post" />
+          <div className="flex-1">
+            <a href="/blog-post">
+              <div className="flex pt-6 space-x-1 text-sm text-gray-500">
+                <time dateTime="2020-03-10"> Mar 10, 2020 </time>
+                <span aria-hidden="true"> · </span>
+                <span> 4 min read </span>
+              </div>
+            </a>
+            <a href="#" className="block mt-2 space-y-6">
+              <h3 className="text-2xl font-semibold leading-none tracking-tighter text-neutral-600">Typography on app.</h3>
+              <p className="text-lg font-normal text-gray-500">Filling text so you can see how it looks like with text. Did I said text?</p>
+              <div className="flex items-center mt-6">
+                <div>
+                  <img className="inline-block rounded-full h-9 w-9" src="https://source.unsplash.com/random" alt="blog excerpt content" />
+                </div>
+                <div className="ml-3">
+                  <p className="text-sm font-medium text-gray-700 group-hover:text-neutral-600">Jazz Torp</p>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
-        <h2 className="text-xl font-medium title-font text-gray-900 mt-5">The Catalyzer</h2>
-        <p className="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
-        <a className="text-indigo-500 inline-flex items-center mt-3">Learn More
-          <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-            <path d="M5 12h14M12 5l7 7-7 7" />
-          </svg>
-        </a>
       </div>
-      <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
-        <div className="rounded-lg h-64 overflow-hidden">
-          <img alt="content" className="object-cover object-center h-full w-full" src="https://dummyimage.com/1205x505" />
+      <div className="lg:grid lg:grid-cols-2 lg:gap-8">
+        <div className="flex flex-col mb-12 overflow-hidden cursor-pointer">
+          <a href="/blog-post">
+            <div className="flex-shrink-0">
+              <img className="object-cover w-full h-48 rounded-lg" src="https://source.unsplash.com/random" alt="blog excerpt content" />
+            </div>
+          </a>
+          <div className="flex flex-col justify-between flex-1">
+            <a href="/blog-post" />
+            <div className="flex-1">
+              <a href="/blog-post">
+                <div className="flex pt-6 space-x-1 text-sm text-gray-500">
+                  <time dateTime="2020-03-10"> Mar 10, 2020 </time>
+                  <span aria-hidden="true"> · </span>
+                  <span> 4 min read </span>
+                </div>
+              </a>
+              <a href="#" className="block mt-2 space-y-6">
+                <h3 className="text-2xl font-semibold leading-none tracking-tighter text-neutral-600">Typography on app.</h3>
+                <p className="text-lg font-normal text-gray-500">Filling text so you can see how it looks like with text. Did I said text?</p>
+                <div className="flex items-center mt-6">
+                  <div>
+                    <img className="inline-block rounded-full h-9 w-9" src="https://source.unsplash.com/random" alt="blog excerpt content"/>
+                  </div>
+                  <div className="ml-3">
+                    <p className="text-sm font-medium text-gray-700 group-hover:text-neutral-600">Robert Zox</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
-        <h2 className="text-xl font-medium title-font text-gray-900 mt-5">The 400 Blows</h2>
-        <p className="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
-        <a className="text-indigo-500 inline-flex items-center mt-3">Learn More
-          <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-            <path d="M5 12h14M12 5l7 7-7 7" />
-          </svg>
-        </a>
+        <div className="flex flex-col mb-12 overflow-hidden cursor-pointer">
+          <a href="/blog-post">
+            <div className="flex-shrink-0">
+              <img className="object-cover w-full h-48 rounded-lg" src="https://source.unsplash.com/random" alt="blog excerpt content" />
+            </div>
+          </a>
+          <div className="flex flex-col justify-between flex-1">
+            <a href="/blog-post" />
+            <div className="flex-1">
+              <a href="/blog-post">
+                <div className="flex pt-6 space-x-1 text-sm text-gray-500">
+                  <time dateTime="2020-03-10"> Mar 10, 2020 </time>
+                  <span aria-hidden="true"> · </span>
+                  <span> 4 min read </span>
+                </div>
+              </a>
+              <a href="#" className="block mt-2 space-y-6">
+                <h3 className="text-2xl font-semibold leading-none tracking-tighter text-neutral-600">Typography on app.</h3>
+                <p className="text-lg font-normal text-gray-500">Filling text so you can see how it looks like with text. Did I said text?</p>
+                <div className="flex items-center mt-6">
+                  <div>
+                    <img className="inline-block rounded-full h-9 w-9" src="https://source.unsplash.com/random" alt="blog excerpt content" />
+                  </div>
+                  <div className="ml-3">
+                    <p className="text-sm font-medium text-gray-700 group-hover:text-neutral-600">Thomas Narrow</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
+
 
 
 
