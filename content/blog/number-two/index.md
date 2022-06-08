@@ -1,8 +1,10 @@
 ---
-title: Hello World
+title: Two Baby Baby
 date: "2015-05-01T22:12:03.284Z"
 excerpt: "This is the exxx"
 description: "Hello World"
+featured: false
+image: "../images/gatsby-icon.png"
 ---
 
 This is my first post on my new fake blog! How exciting!

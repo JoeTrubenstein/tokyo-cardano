@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <NavBar siteTitle={data.site.siteMetadata.title} />
-      <div
+      <div className="dark:bg-nightBack"
         style={{
           margin: `0 auto`,
           padding: `0 1.0875rem 1.45rem`,
