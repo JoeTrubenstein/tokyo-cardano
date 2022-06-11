@@ -31,14 +31,12 @@ export default function NavBar({ specialNav }) {
   const [darkMode, setDarkMode] = useState(false);
   // Similar to componentDidMount and componentDidUpdate:
   useEffect((darkMode) => {
-    if (localStorage.theme === 'light') {
-      localStorage.theme = 'light';
-      document.documentElement.classList.remove('dark');
-      setDarkMode(!darkMode);
-    }
     if (localStorage.theme === 'dark') {
       localStorage.theme = 'dark';
       document.documentElement.classList.add('dark');
+      setDarkMode(!darkMode);
+    } else {
+      localStorage.theme = 'light';
       setDarkMode(!darkMode);
     }
   }, []);
@@ -113,7 +111,6 @@ export default function NavBar({ specialNav }) {
                             localStorage.theme = 'light';
                             console.log("setting theme to light")
                           }
-                          console.log("you tried toggling the theme")
                         }}>
                         {darkMode ? (
                           <svg
@@ -244,17 +241,23 @@ export default function NavBar({ specialNav }) {
                       <span className="sr-only">View notifications</span>
                     </button> */}
                     <button
-                      onClick={() => {
-                        if (localStorage.theme === 'dark') {
-                          localStorage.theme = 'light';
-                          document.documentElement.classList.remove('dark');
-                          setDarkMode(!darkMode);
-                        } else if (localStorage.theme === 'light') {
-                          localStorage.theme = 'dark';
-                          document.documentElement.classList.add('dark');
-                          setDarkMode(!darkMode);
-                        }
-                      }}>
+                        onClick={(e) => {
+                          e.preventDefault();
+                          if (localStorage.theme === 'dark') {
+                            localStorage.theme = 'light';
+                            document.documentElement.classList.remove('dark');
+                            setDarkMode(!darkMode);
+                            console.log("you toggled the theme")
+                          } else if (localStorage.theme === 'light') {
+                            localStorage.theme = 'dark';
+                            document.documentElement.classList.add('dark');
+                            setDarkMode(!darkMode);
+                            console.log("you toggled the theme")
+                          } else {
+                            localStorage.theme = 'light';
+                            console.log("setting theme to light")
+                          }
+                        }}>
                       {darkMode ? (
                         <svg
                           className="w-8 h-8 md:w-10 md:h-10 text-babyBlue dark:text-nightBlue"
