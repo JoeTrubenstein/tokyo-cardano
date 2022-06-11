@@ -54,7 +54,7 @@ export default function NavBar({ specialNav }) {
         ```
       */}
       <div id="topArea" className="min-h-full">
-        { console.log("current theme is "+ localStorage.theme)}
+        { localStorage ? (console.log("current theme is "+ localStorage.theme)):(console.log("no theme set"))}
         <Disclosure as="nav" className="dark:bg-nightBack bg-white border-b dark:border-slate-600">
           {({ open }) => (
             <>
