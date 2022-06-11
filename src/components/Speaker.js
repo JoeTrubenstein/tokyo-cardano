@@ -5,7 +5,7 @@ import Kriss from '../images/Kriss.png';
 
 const Speakers = () => {
   return (
-    <section>
+    <section id="speakerArea">
       <div className="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-24 max-w-7xl">
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
           {/*  */}

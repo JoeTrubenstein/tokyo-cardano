@@ -54,6 +54,7 @@ export default function NavBar({ specialNav }) {
         ```
       */}
       <div id="topArea" className="min-h-full">
+        { console.log("current theme is "+ localStorage.theme)}
         <Disclosure as="nav" className="dark:bg-nightBack bg-white border-b dark:border-slate-600">
           {({ open }) => (
             <>
@@ -97,7 +98,8 @@ export default function NavBar({ specialNav }) {
                     <div className="ml-4 flex items-center md:ml-6">
                       <button
                         className="text-babyBlue dark:text-nightBlue"
-                        onClick={() => {
+                        onClick={(e) => {
+                          e.preventDefault();
                           if (localStorage.theme === 'dark') {
                             localStorage.theme = 'light';
                             document.documentElement.classList.remove('dark');
