@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link, graphql, StaticQuery } from 'gatsby';
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { graphql, StaticQuery } from 'gatsby';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 const Blog = () => {
   return (
@@ -27,10 +27,7 @@ const Blog = () => {
                   featured
                   featuredImage {
                     childImageSharp {
-                      gatsbyImageData(
-                        placeholder: BLURRED
-                        formats: [AUTO, WEBP, AVIF]
-                      )
+                      gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
                     }
                   }
                 }
@@ -39,7 +36,7 @@ const Blog = () => {
           }
         `}
         render={(data) => (
-          <section className="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-24 max-w-7xl">
+          <section id="blogArea" className="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-24 max-w-7xl">
             <div className="pb-4 border-b border-gray-600">
               <h3 className="text-xl font-semibold leading-6 text-gray-800 dark:text-white">
                 Latest Entries
@@ -49,36 +46,41 @@ const Blog = () => {
               <div className="grid max-w-lg gap-8 mx-auto mt-12 lg:grid-cols-2 lg:max-w-none">
                 {/*  */}
                 {data.allMarkdownRemark.nodes.map((post) => {
-                  const image = getImage(post.frontmatter.featuredImage)
+                  const image = getImage(post.frontmatter.featuredImage);
                   if (post.frontmatter.featured === true) {
                     return (
-                      <div className="flex flex-col mb-12 overflow-hidden cursor-pointer">
+                      <div
+                        key={post.fields.slug}
+                        className="flex flex-col mb-12 overflow-hidden cursor-pointer">
                         <a href={post.fields.slug}>
                           <div className="flex-shrink-0">
-                            <div className=" w-full h-48 rounded-lg">
-                            <GatsbyImage layout="fullWidth" objectFit='cover' image={image} alt={"ayyylmao"} />
+                            <div className=" w-full h-full rounded-lg">
+                              <GatsbyImage
+                                layout="fullWidth"
+                                objectFit="cover"
+                                image={image}
+                                alt={'ayyylmao'}
+                              />
                             </div>
                           </div>
                         </a>
                         <div className="flex flex-col justify-between flex-1">
-                          <a href="/blog-post" />
                           <div className="flex-1">
-                            <a href="/blog-post">
+                            <a href={post.fields.slug}>
                               <div className="flex pt-6 space-x-1 text-sm text-babyBlue dark:text-nightBlue">
-                                <time dateTime="2020-03-10"> Mar 10, 2020 </time>
-                                <span aria-hidden="true"> · </span>
-                                <span> 4 min read </span>
+                                <time dateTime="2020-03-10"> {post.frontmatter.date}</time>
+                                {/* <span aria-hidden="true"> · </span> */}
+                                {/* <span> 4 min read </span> */}
                               </div>
                             </a>
-                            <a href="#" className="block mt-2 space-y-6">
+                            <a href={post.fields.slug} className="block mt-2 space-y-6">
                               <h3 className="text-2xl font-semibold leading-none tracking-tighter text-neutral-600 dark:text-white">
                                 {post.frontmatter.title}
                               </h3>
                               <p className="text-lg font-normal text-gray-500 dark:text-white">
-                                Filling text so you can see how it looks like with text. Did I said
-                                text?
+                              {post.frontmatter.excerpt}
                               </p>
-                              <div className="flex items-center mt-6">
+                              {/* <div className="flex items-center mt-6">
                                 <div>
                                   <img
                                     className="inline-block rounded-full h-9 w-9"
@@ -91,7 +93,7 @@ const Blog = () => {
                                     Jazz Torp
                                   </p>
                                 </div>
-                              </div>
+                              </div> */}
                             </a>
                           </div>
                         </div>
@@ -104,37 +106,42 @@ const Blog = () => {
                 <div className="lg:grid lg:grid-cols-2 lg:gap-8">
                   {/*  */}
                   {data.allMarkdownRemark.nodes.map((post) => {
+                     const image = getImage(post.frontmatter.featuredImage);
                     if (post.frontmatter.featured === false) {
                       return (
-                        <div className="flex flex-col mb-12 overflow-hidden cursor-pointer">
+                        <div
+                          key={post.fields.slug}
+                          className="flex flex-col mb-12 overflow-hidden cursor-pointer">
                           <a href={post.fields.slug}>
                             <div className="flex-shrink-0">
-                              <img
-                                className="object-cover w-full h-48 rounded-lg"
-                                src="/assets/images/placeholders/neon-5.jpg"
-                                alt
-                              />
+                              <div
+                                className="object-cover w-full h-48 rounded-lg">
+                                <GatsbyImage
+                                  layout="fullWidth"
+                                  objectFit="cover"
+                                  image={image}
+                                  alt={'ayyylmao'}
+                                />
+                              </div>
                             </div>
                           </a>
                           <div className="flex flex-col justify-between flex-1">
-                            <a href="/blog-post" />
                             <div className="flex-1">
-                              <a href="/blog-post">
+                              <a href={post.fields.slug}>
                                 <div className="flex pt-6 space-x-1 text-sm text-babyBlue dark:text-nightBlue">
-                                  <time dateTime="2020-03-10"> Mar 10, 2020 </time>
-                                  <span aria-hidden="true"> · </span>
-                                  <span> 4 min read </span>
+                                  <time dateTime="2020-03-10"> {post.frontmatter.date}</time>
+                                  {/* <span aria-hidden="true"> · </span> */}
+                                  {/* <span> 4 min read </span> */}
                                 </div>
                               </a>
-                              <a href="#" className="block mt-2 space-y-6">
+                              <a href={post.fields.slug} className="block mt-2 space-y-6">
                                 <h3 className="text-2xl font-semibold leading-none tracking-tighter text-neutral-600 dark:text-white">
                                   {post.frontmatter.title}
                                 </h3>
                                 <p className="text-lg font-normal text-gray-500 dark:text-white">
-                                  Filling text so you can see how it looks like with text. Did I
-                                  said text?
+                                  {post.frontmatter.excerpt}
                                 </p>
-                                <div className="flex items-center mt-6">
+                                {/* <div className="flex items-center mt-6">
                                   <div>
                                     <img
                                       className="inline-block rounded-full h-9 w-9"
@@ -147,7 +154,7 @@ const Blog = () => {
                                       Robert Zox
                                     </p>
                                   </div>
-                                </div>
+                                </div> */}
                               </a>
                             </div>
                           </div>

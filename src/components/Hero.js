@@ -18,8 +18,8 @@ export default function Hero() {
         </div>
       </div>
       <div className="flex flex-col items-start mt-12 mb-16 text-left lg:flex-grow lg:w-1/2 lg:pl-6 xl:pl-24 md:mb-0 xl:mt-0">
-        <span className="dark:text-white mb-8 text-xs font-bold tracking-widest text-babyBlue dark:text-nightBlue uppercase"> Your tagline </span>
-        <h1 className="dark:text-white mb-8 text-4xl font-bold leading-none tracking-tighter text-neutral-600 md:text-7xl lg:text-5xl">Medium length display headline.</h1>
+        <span className="dark:text-white mb-8 text-xs font-bold tracking-widest text-babyBlue dark:text-nightBlue uppercase">The Tokyo Cardano Summit</span>
+        <h1 className="dark:text-white mb-8 text-4xl font-bold leading-none tracking-tighter text-neutral-600 md:text-7xl lg:text-5xl">東京🤝カルダノ</h1>
         <p className="dark:text-white mb-8 text-base leading-relaxed text-left text-gray-500">Free and Premium themes, UI Kit's, templates and landing pages built with Tailwind CSS, HTML &amp; Next.js.</p>
         <div className="mt-0 lg:mt-6 max-w-7xl sm:flex">
           <div className="mt-3 rounded-lg sm:mt-0">

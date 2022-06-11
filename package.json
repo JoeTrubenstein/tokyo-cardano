@@ -24,6 +24,7 @@
     "gatsby-plugin-purgecss": "^6.1.2",
     "gatsby-plugin-react-helmet": "^5.5.0",
     "gatsby-plugin-sharp": "^4.11.1",
+    "gatsby-plugin-smoothscroll": "^1.2.0",
     "gatsby-remark-copy-linked-files": "^5.15.0",
     "gatsby-remark-images": "^6.15.1",
     "gatsby-remark-prismjs": "^6.15.0",

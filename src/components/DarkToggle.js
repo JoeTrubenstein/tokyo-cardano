@@ -7,11 +7,9 @@ const DarkToggle = () => {
           if (localStorage.theme === 'dark'){
             localStorage.theme = 'light'
             document.documentElement.classList.remove('dark')
-            console.log(localStorage.theme)
           } else if (localStorage.theme === 'light') {
             localStorage.theme ='dark'
             document.documentElement.classList.add('dark')
-            console.log(localStorage.theme)
           }
           
           }}
