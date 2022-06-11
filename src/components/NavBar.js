@@ -69,7 +69,7 @@ export default function NavBar({ specialNav }) {
                           <a
                             href={'../../'}
                             key={'homeonly'}
-                            className="bg-babyBlue text-white text-gray-700 dark:text-white hover:bg-babyBlue hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                            className="text-white text-gray-700 dark:text-white hover:bg-babyBlue hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                             Home
                           </a>
                         </div>

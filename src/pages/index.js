@@ -3,7 +3,8 @@ import Layout from "../components/Layout"
 import SeoWrapper from "../components/SeoWrapper"
 import Hero from "../components/Hero"
 import Blog from "../components/Blog"
-import Speakers from "../components/Speakers"
+// import Speakers from "../components/Speakers"
+import Speaker from "../components/Speaker"
 // import SummitFeatures from "../components/SummitFeatures"
 // import CnftFeed from "../components/CnftFeed"
 
@@ -12,9 +13,8 @@ const IndexPage = () => (
     <SeoWrapper title="Home" />
     <Layout>
       <Hero />
-      <Speakers />
-      {/* <SummitFeatures /> */}
-      {/* <CnftFeed /> */}
+      <Speaker />
+
       <Blog />
     </Layout>
   </div>

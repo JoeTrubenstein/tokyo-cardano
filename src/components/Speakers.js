@@ -1,18 +1,23 @@
 import React from 'react';
-// import Yunya from "../images/YunyaAvatar.png"
-// import Ryu from "../images/RyuAvatar.png"
-// import Kriss from "../images/KrissAvatar.png"
+import Yunya from '../images/Yunya.png';
+import Ryu from '../images/Ryu.png';
+import Kriss from '../images/Kriss.png';
 
 const Speakers = () => {
   return (
-    <section  id="speakerArea">
-      <div
-       
-        className="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-24 max-w-7xl">
+    <section id="speakerArea">
+      <div className="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-24 max-w-7xl">
         <div className="grid w-full grid-cols-1 gap-6 mx-auto lg:grid-cols-3">
           <div className="p-6">
-            <div className="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl bg-babyBlue dark:bg-nightBlue"></div>
-            {/* <img className="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src={Yunya} alt="blog" /> */}
+            <div className=" w-full mb-8 lg:h-48 md:h-36 rounded-xl bg-blue-100 dark:bg-nightBack">
+              {' '}
+              <img
+                className="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl"
+                src={Yunya}
+                alt="blog"
+              />
+            </div>
+
             <h2 className="mb-8 text-xs font-semibold tracking-widest text-babyBlue dark:text-nightBlue uppercase">
               CNFT is Community
             </h2>
@@ -30,8 +35,14 @@ const Speakers = () => {
             </div>
           </div>
           <div className="p-6">
-            <div className="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl bg-babyBlue dark:bg-nightBlue"></div>
-            {/* <img className="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src={Ryu}  alt="blog" /> */}
+            <div className=" w-full mb-8 lg:h-48 md:h-36 rounded-xl bg-blue-100 dark:bg-nightBack">
+              {' '}
+              <img
+                className="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl"
+                src={Ryu}
+                alt="blog"
+              />
+            </div>
             <h2 className="mb-8 text-xs font-semibold tracking-widest text-babyBlue dark:text-nightBlue uppercase">
               Otodojo Nodes
             </h2>
@@ -49,8 +60,13 @@ const Speakers = () => {
             </div>
           </div>
           <div className="p-6">
-            <div className="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl bg-babyBlue dark:bg-nightBlue"></div>
-            {/* <img className="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src={Kriss}  alt="blog" /> */}
+            <div className=" w-full mb-8 lg:h-48 md:h-36 rounded-xl bg-blue-100 dark:bg-nightBack">
+              <img
+                className="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl"
+                src={Kriss}
+                alt="blog"
+              />
+            </div>
             <h2 className="mb-8 text-xs font-semibold tracking-widest text-babyBlue dark:text-nightBlue uppercase">
               Project Catalyst
             </h2>
@@ -67,6 +83,8 @@ const Speakers = () => {
               </a>
             </div>
           </div>
+          
+          {/*  */}
         </div>
       </div>
     </section>

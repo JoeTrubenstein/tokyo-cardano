@@ -27,7 +27,11 @@ const Blog = () => {
                   featured
                   featuredImage {
                     childImageSharp {
-                      gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+                      gatsbyImageData(
+                        height: 200
+                        placeholder: BLURRED
+                        formats: [AUTO, WEBP, AVIF]
+                      )
                     }
                   }
                 }
@@ -36,7 +40,9 @@ const Blog = () => {
           }
         `}
         render={(data) => (
-          <section id="blogArea" className="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-24 max-w-7xl">
+          <section
+            id="blogArea"
+            className="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-24 max-w-7xl">
             <div className="pb-4 border-b border-gray-600">
               <h3 className="text-xl font-semibold leading-6 text-gray-800 dark:text-white">
                 Latest Entries
@@ -54,12 +60,14 @@ const Blog = () => {
                         className="flex flex-col mb-12 overflow-hidden cursor-pointer">
                         <a href={post.fields.slug}>
                           <div className="flex-shrink-0">
-                            <div className=" w-full h-full rounded-lg">
+                            <div className="object-cover w-full h-48 rounded-lg">
                               <GatsbyImage
-                                layout="fullWidth"
-                                objectFit="cover"
                                 image={image}
                                 alt={'ayyylmao'}
+                                style={{
+                                  width: '100%',
+                                  height: '100%'
+                                }}
                               />
                             </div>
                           </div>
@@ -78,7 +86,7 @@ const Blog = () => {
                                 {post.frontmatter.title}
                               </h3>
                               <p className="text-lg font-normal text-gray-500 dark:text-white">
-                              {post.frontmatter.excerpt}
+                                {post.frontmatter.excerpt}
                               </p>
                               {/* <div className="flex items-center mt-6">
                                 <div>
@@ -106,7 +114,7 @@ const Blog = () => {
                 <div className="lg:grid lg:grid-cols-2 lg:gap-8">
                   {/*  */}
                   {data.allMarkdownRemark.nodes.map((post) => {
-                     const image = getImage(post.frontmatter.featuredImage);
+                    const image = getImage(post.frontmatter.featuredImage);
                     if (post.frontmatter.featured === false) {
                       return (
                         <div
@@ -114,13 +122,14 @@ const Blog = () => {
                           className="flex flex-col mb-12 overflow-hidden cursor-pointer">
                           <a href={post.fields.slug}>
                             <div className="flex-shrink-0">
-                              <div
-                                className="object-cover w-full h-48 rounded-lg">
+                              <div className="w-full h-48 rounded-lg">
                                 <GatsbyImage
-                                  layout="fullWidth"
-                                  objectFit="cover"
                                   image={image}
                                   alt={'ayyylmao'}
+                                  style={{
+                                    width: '100%',
+                                    height: '100%'
+                                  }}
                                 />
                               </div>
                             </div>
