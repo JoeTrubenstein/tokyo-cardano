@@ -9,10 +9,10 @@ export default function Hero() {
       <div className="w-full lg:max-w-lg lg:w-1/2 rounded-xl">
         <div>
           <div className="relative w-full max-w-lg">
-            <div className="absolute top-0 rounded-full bg-violet-300 -left-4 w-72 h-72 mix-blend-multiply filter blur-xl opacity-70 animate-blob" />
+            <div className="absolute top-0 rounded-full bg-babyBlue dark:bg-nightBlue -left-4 w-72 h-72 mix-blend-multiply filter blur-xl opacity-20 animate-blob" />
             <div className="absolute   -bottom-24 right-20 w-72 h-72 mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000" />
             <div className="relative">
-              <img className="object-cover object-center h-64 mx-auto " alt="hero" src={tinyplanet} />
+              <img className="object-cover object-center h-72 mx-auto " alt="hero" src={tinyplanet} />
             </div>
           </div>
         </div>

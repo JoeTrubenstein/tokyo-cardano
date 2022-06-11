@@ -19,7 +19,7 @@ const BlogPostTemplate = ({ data, location }) => {
       />
 
       <section className="dark:bg-nightBack dark:text-white">
-        <div className=" dark:bg-nightBack px-4 mx-auto max-w-7xl sm:px-6 md:px-12 lg:px-24 lg:py-24">
+        <div className=" dark:bg-nightBack px-4 mx-auto max-w-7xl sm:px-6 md:px-12 lg:px-24 lg:py-24 py-24">
           <div className="flex flex-wrap items-center mx-auto max-w-7xl">
             <div className="w-full lg:max-w-lg lg:w-1/2 rounded-xl">
               <div>

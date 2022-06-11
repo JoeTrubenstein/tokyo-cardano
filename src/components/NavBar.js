@@ -74,7 +74,7 @@ export default function NavBar({ specialNav }) {
                           </a>
                         </div>
                       ) : (
-                        <div className="ml-10 flex items-baseline space-x-4">
+                        <div className="ml-10 flex items-baseline  space-x-4">
                           {navigation.map((item) => (
                             <button
                               onClick={() => scrollTo(item.areaName)}
@@ -91,10 +91,6 @@ export default function NavBar({ specialNav }) {
                           ))}
                         </div>
                       )}
-
-                      {/*  Render this one if it's the blog page - it uses regular hrefs */}
-
-                      {/*  */}
                     </div>
                   </div>
                   <div className="hidden md:block">
@@ -106,12 +102,10 @@ export default function NavBar({ specialNav }) {
                             localStorage.theme = 'light';
                             document.documentElement.classList.remove('dark');
                             setDarkMode(!darkMode);
-                
                           } else if (localStorage.theme === 'light') {
                             localStorage.theme = 'dark';
                             document.documentElement.classList.add('dark');
                             setDarkMode(!darkMode);
-                
                           }
                         }}>
                         {darkMode ? (
@@ -184,7 +178,7 @@ export default function NavBar({ specialNav }) {
                   </div>
                   <div className="-mr-2 flex md:hidden">
                     {/* Mobile menu button */}
-                    <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md focus:outline-none  ">
+                    <Disclosure.Button className="inline-flex dark:text-white items-center justify-center p-2 rounded-md focus:outline-none  ">
                       <span className="sr-only">Open main menu</span>
                       {open ? (
                         <XIcon className="dark:text-white block h-6 w-6" aria-hidden="true" />
@@ -197,23 +191,36 @@ export default function NavBar({ specialNav }) {
               </div>
 
               <Disclosure.Panel className="md:hidden">
-                <div className="px-2 text-center pt-2 pb-3 space-y-1 sm:px-3">
-                  {navigation.map((item) => (
+                {specialNav ? (
+                  <div className="px-2 text-center pt-2 pb-3 space-y-1 sm:px-3">
                     <Disclosure.Button
-                      key={item.name}
+                      key="homeonlykeybro"
                       as="a"
-                      href={item.href}
-                      className={classNames(
-                        item.current
-                          ? 'text-babyBlue dark:text-nightBlue'
-                          : 'text-gray-700 dark:text-white',
-                        'block px-3 py-2 rounded-md font-medium'
-                      )}
-                      aria-current={item.current ? 'page' : undefined}>
-                      {item.name}
+                      href="../../"
+                      className="text-babyBlue dark:text-nightBlue text-gray-700 dark:text-white
+                                      block px-3 py-2 rounded-md font-medium">
+                      Home
                     </Disclosure.Button>
-                  ))}
-                </div>
+                  </div>
+                ) : (
+                  <div className="m-0 px-2 text-center flex flex-col pt-2 pb-3 space-y-1 sm:px-3">
+                    {navigation.map((item) => (
+                      <button
+                        onClick={() => scrollTo(item.areaName)}
+                        key={item.name}
+                        className={classNames(
+                          item.current
+                            ? 'text-babyBlue dark:text-nightBlue'
+                            : 'text-gray-700 dark:text-white',
+                          'block px-3 py-2 rounded-md font-medium'
+                        )}
+                        aria-current={item.current ? 'page' : undefined}>
+                        {item.name}
+                      </button>
+                    ))}
+                  </div>
+                )}
+
                 <div className="pt-4 pb-3">
                   <div className="flex px-5 justify-center">
                     {/* <div className="flex-shrink-0">
@@ -235,12 +242,10 @@ export default function NavBar({ specialNav }) {
                           localStorage.theme = 'light';
                           document.documentElement.classList.remove('dark');
                           setDarkMode(!darkMode);
-                  
                         } else if (localStorage.theme === 'light') {
                           localStorage.theme = 'dark';
                           document.documentElement.classList.add('dark');
                           setDarkMode(!darkMode);
-                     
                         }
                       }}>
                       {darkMode ? (
