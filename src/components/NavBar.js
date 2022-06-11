@@ -103,11 +103,17 @@ export default function NavBar({ specialNav }) {
                             localStorage.theme = 'light';
                             document.documentElement.classList.remove('dark');
                             setDarkMode(!darkMode);
+                            console.log("you toggled the theme")
                           } else if (localStorage.theme === 'light') {
                             localStorage.theme = 'dark';
                             document.documentElement.classList.add('dark');
                             setDarkMode(!darkMode);
+                            console.log("you toggled the theme")
+                          } else {
+                            localStorage.theme = 'light';
+                            console.log("setting theme to light")
                           }
+                          console.log("you tried toggling the theme")
                         }}>
                         {darkMode ? (
                           <svg
