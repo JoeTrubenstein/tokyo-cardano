@@ -98,7 +98,7 @@ const Speakers = () => {
 
           {/*  */}
           <div className="flex flex-col w-full max-w-lg mb-12 text-left lg:mx-auto">
-            <a href="../../" className="inline-flex items-center w-full mb-4">
+            <div className="inline-flex items-center w-full mb-4">
               <img
                 alt="blog"
                 src={Ryu}
@@ -112,7 +112,7 @@ const Speakers = () => {
                   Otodojo Nodes
                 </span>
               </span>
-            </a>
+            </div>
             <span className="inline-flex justify-start sm:mt-0">
               <a
                 href="https://twitter.com/OtodojoNodes?s=20&t=jPGu4jes4tziByGm03-fgQ"
@@ -153,7 +153,7 @@ const Speakers = () => {
 
           {/*  */}
           <div className="flex flex-col w-full max-w-lg mb-12 text-left lg:mx-auto">
-            <a href="../../" className="inline-flex items-center w-full mb-4">
+            <div className="inline-flex items-center w-full mb-4">
               <img
                 alt="blog"
                 src={Kriss}
@@ -167,7 +167,7 @@ const Speakers = () => {
                   Project Catalyst
                 </span>
               </span>
-            </a>
+            </div>
             <span className="inline-flex justify-start sm:mt-0">
               <a
                 href="https://twitter.com/krissbaird"
