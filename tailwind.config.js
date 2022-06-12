@@ -41,7 +41,9 @@ module.exports = {
       rose: colors.rose,
       nightBack:"#0E172A",
       babyBlue:"#0BA5E9",
-      nightBlue:"#37BCF8"
+      nightBlue:"#37BCF8",
+      babyPink:"#EC4899",
+      nightPink:"#F471B5"
     }),
     columns: {
       auto: 'auto',

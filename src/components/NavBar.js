@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Fragment } from 'react';
 import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
-import icon from '../images/TCLogo.png';
+import icon from '../images/tinyplanet.png';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 
 // const user = {
@@ -34,7 +34,7 @@ export default function NavBar({ specialNav }) {
     if (localStorage.theme === 'dark') {
       localStorage.theme = 'dark';
       document.documentElement.classList.add('dark');
-      setDarkMode(!darkMode);
+      setDarkMode(darkMode);
     } else {
       localStorage.theme = 'light';
       setDarkMode(!darkMode);
@@ -67,7 +67,7 @@ export default function NavBar({ specialNav }) {
                           <a
                             href={'../../'}
                             key={'homeonly'}
-                            className="text-white text-gray-700 dark:text-white hover:bg-babyBlue hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                            className="dark:text-white text-gray-700 dark:text-white hover:bg-babyBlue hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                             Home
                           </a>
                         </div>

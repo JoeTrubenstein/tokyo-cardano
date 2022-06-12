@@ -45,7 +45,7 @@ const Blog = () => {
             className="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-24 max-w-7xl">
             <div className="pb-4 border-b border-gray-600">
               <h3 className="text-xl font-semibold leading-6 text-gray-800 dark:text-white">
-                Latest Entries
+                Blog
               </h3>
             </div>
             <div className="relative mx-auto max-w-7xl">
@@ -66,7 +66,8 @@ const Blog = () => {
                                 alt={'ayyylmao'}
                                 style={{
                                   width: '100%',
-                                  height: '100%'
+                                  height: '100%',
+                                  borderRadius:'15px'
                                 }}
                               />
                             </div>
@@ -128,7 +129,8 @@ const Blog = () => {
                                   alt={'ayyylmao'}
                                   style={{
                                     width: '100%',
-                                    height: '100%'
+                                    height: '100%',
+                                    borderRadius:'15px'
                                   }}
                                 />
                               </div>

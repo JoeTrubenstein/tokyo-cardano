@@ -19,7 +19,7 @@ const BlogPostTemplate = ({ data, location }) => {
       />
 
       <section className="dark:bg-nightBack dark:text-white">
-        <div className=" dark:bg-nightBack px-4 mx-auto max-w-7xl sm:px-6 md:px-12 lg:px-24 lg:py-24 py-24">
+        <div className=" dark:bg-nightBack px-4 mx-auto max-w-7xl sm:px-6 md:px-12 lg:px-24 lg:py-24 pt-12 ">
           <div className="flex flex-wrap items-center mx-auto max-w-7xl">
             <div className="w-full lg:max-w-lg lg:w-1/2 rounded-xl">
               <div>
@@ -39,7 +39,7 @@ const BlogPostTemplate = ({ data, location }) => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col items-start mt-12 mb-16 text-left lg:flex-grow lg:w-1/2 lg:pl-6 xl:pl-24 md:mb-0 xl:mt-0">
+            <div className="flex flex-col items-start mt-12 mb-16 text-left lg:flex-grow lg:w-1/2 lg:pl-6 xl:pl-24 mb-0 xl:mt-0">
               <span className="mb-8 text-xs font-bold tracking-widest text-babyBlue dark:text-nightBlue uppercase">
                 {' '}
                 {post.frontmatter.date}
@@ -64,7 +64,7 @@ const BlogPostTemplate = ({ data, location }) => {
       </section>
       {/* The Full Post in Glory! */}
       <div
-        className="px-4 mx-auto max-w-7xl sm:px-6 md:px-12 lg:px-24 prose dark:text-white dark:prose-headings:text-white dark:bg-nightBack dark:prose-a:text-nightBlue"
+        className="px-4 mx-auto max-w-7xl sm:px-6 md:px-12 lg:px-24 prose dark:text-white dark:prose-headings:text-white dark:bg-nightBack dark:prose-a:text-nightBlue mb-12"
         dangerouslySetInnerHTML={{ __html: post.html }}
       />
       {/*  */}
