@@ -1,6 +1,6 @@
 /* This example requires Tailwind CSS v2.0+ */
 import React from 'react';
-import meetinglight from '../images/meeting-08.png';
+import meetinglight from '../images/darumapixel-13.png';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 
 export default function Hero() {
@@ -12,8 +12,8 @@ export default function Hero() {
           <div className="w-full lg:max-w-lg lg:w-1/2 rounded-xl">
             <div>
               <div className="relative w-full max-w-lg">
-                <div className="absolute top-0 rounded-full bg-babyBlue dark:bg-nightBlue -left-4 w-72 h-72 mix-blend-multiply filter blur-xl opacity-20 animate-blob" />
-                <div className="absolute  -bottom-24 right-20 w-72 h-72 mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000" />
+                <div className="absolute top-0 rounded-full -left-4 w-72 h-72 " />
+                <div className="absolute  -bottom-24 right-20 w-72 h-72   " />
                 <div className="relative">
                   <img
                     className="object-cover w-full object-center mx-auto "
