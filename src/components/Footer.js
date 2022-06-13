@@ -1,5 +1,5 @@
 import React from "react";
-import icon from "../images/tinyplanet.png"
+import icon from "../images/darumaicon-07.png"
 
 const Footer = () => {
     return (

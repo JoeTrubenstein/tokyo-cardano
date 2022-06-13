@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Fragment } from 'react';
 import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
-import icon from '../images/tinyplanet.png';
+import icon from '../images/darumaicon-07.png';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 
 // const user = {
