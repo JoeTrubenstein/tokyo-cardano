@@ -90,8 +90,7 @@ const Speakers = () => {
               {/*  */}
             </span>
             <p className="mx-auto mt-6 text-base leading-relaxed text-gray-500 dark:text-white">
-              Founder of CNFT is Community, The East Meets West CNFT Festival, and Cardano community
-              leader in Japan.
+              Founder of CNFT is Community and CNFT Festival ~Japan Meets The West~. 
             </p>
           </div>
           {/*  */}
