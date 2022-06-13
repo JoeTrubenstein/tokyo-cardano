@@ -145,7 +145,7 @@ const Speakers = () => {
               {/*  */}
             </span>
             <p className="mx-auto mt-6 text-base leading-relaxed text-gray-500 dark:text-white">
-              Co-founder of Otodojo Nodes, martial artist, gamer, and fururist tech entrepreneur.
+              Co-founder of Otodojo Nodes, musician, martial artist, gamer, and fururist tech entrepreneur.
             </p>
           </div>
           {/*  */}
