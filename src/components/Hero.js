@@ -29,7 +29,7 @@ export default function Hero() {
               The Tokyo Cardano Summit
             </span>
             <h1 className="dark:text-white mb-8 text-4xl font-bold leading-none tracking-tighter text-neutral-600 md:text-7xl lg:text-5xl">
-              東京カルダノ
+             Tokyo Cardano
             </h1>
             
             <p className="dark:text-white mb-8 text-base leading-relaxed text-left text-gray-500">
