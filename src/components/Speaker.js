@@ -2,6 +2,8 @@ import React from 'react';
 import Yunya from '../images/Yunya.png';
 import Ryu from '../images/Ryu.png';
 import Kriss from '../images/Kriss.png';
+import Yuta from '../images/Yuta.png';
+import Locked from '../images/darumaicon-07.png'
 
 const Speakers = () => {
   return (
@@ -90,7 +92,7 @@ const Speakers = () => {
               {/*  */}
             </span>
             <p className="mx-auto mt-6 text-base leading-relaxed text-gray-500 dark:text-white">
-              Founder of CNFT is Community and CNFT Festival ~Japan Meets The West~. 
+              Founder of CNFT is Community and CNFT Festival ~Japan Meets The West~
             </p>
           </div>
           {/*  */}
@@ -145,7 +147,7 @@ const Speakers = () => {
               {/*  */}
             </span>
             <p className="mx-auto mt-6 text-base leading-relaxed text-gray-500 dark:text-white">
-              Co-founder of Otodojo Nodes, musician, martial artist, gamer, and fururist tech entrepreneur.
+              Co-founder of Otodojo Nodes, musician, martial artist, gamer, and tech entrepreneur
             </p>
           </div>
           {/*  */}
@@ -199,10 +201,170 @@ const Speakers = () => {
               </a>
             </span>
             <p className="mx-auto mt-6 text-base leading-relaxed text-gray-500 dark:text-white">
-              Product Manager of The Project Catalyst Investment Fund at Input Output (IOHK)
+              Product Manager of The Project Catalyst Investment Fund at Input Output (IOG)
             </p>
           </div>
           {/*  */}
+
+
+          <div className="flex flex-col w-full max-w-lg mb-12 text-left lg:mx-auto">
+            <div className="inline-flex items-center w-full mb-4">
+              <img
+                alt="blog"
+                src={Yuta}
+                className="flex-shrink-0 object-cover object-center w-32 h-32 rounded-full"
+              />
+              <span className="flex flex-col flex-grow pl-3">
+                <h2 className="text-sm font-semibold tracking-widest text-babyBlue dark:nightBlue uppercase">
+                  Yuta
+                </h2>
+                <span href="#" className="font-semibold text-gray-500 lg:mb-0 dark:text-white">
+                  Cardano Ambassador
+                </span>
+              </span>
+            </div>
+            <span className="inline-flex justify-start sm:mt-0">
+              <a
+                href="https://twitter.com/yuta_cryptox"
+                className="ml-3 text-babyBlue dark:text-nightBlue hover:text-blue-200 dark:hover:text-blue-100">
+                <svg
+                  fill="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  className="w-5 h-5"
+                  viewBox="0 0 24 24">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
+                </svg>
+              </a>
+              <a
+                href="https://coinzzz.jp/"
+                className="ml-3 text-babyBlue dark:text-nightBlue hover:text-blue-200 dark:hover:text-blue-100">
+                <svg
+                  fill="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  className="w-5 h-5"
+                  viewBox="0 0 24 24">
+<path d="M12 0C8.21 0 4.831 1.757 2.632 4.501l3.953 6.848A5.454 5.454 0 0 1 12 6.545h10.691A12 12 0 0 0 12 0zM1.931 5.47A11.943 11.943 0 0 0 0 12c0 6.012 4.42 10.991 10.189 11.864l3.953-6.847a5.45 5.45 0 0 1-6.865-2.29zm13.342 2.166a5.446 5.446 0 0 1 1.45 7.09l.002.001h-.002l-5.344 9.257c.206.01.413.016.621.016 6.627 0 12-5.373 12-12 0-1.54-.29-3.011-.818-4.364zM12 16.364a4.364 4.364 0 1 1 0-8.728 4.364 4.364 0 0 1 0 8.728Z"></path>
+                </svg>
+              </a>
+            </span>
+            <p className="mx-auto mt-6 text-base leading-relaxed text-gray-500 dark:text-white">
+              Official Cardano Ambassador and Japan Cardano community leader
+            </p>
+          </div>
+{/*  */}
+
+          <div className="flex flex-col w-full max-w-lg mb-12 text-left lg:mx-auto">
+            <div className="inline-flex items-center w-full mb-4">
+              <img
+                alt="blog"
+                src={Locked}
+                className="flex-shrink-0 object-cover object-center w-32 h-32 rounded-full"
+              />
+              <span className="flex flex-col flex-grow pl-3">
+                <h2 className="text-sm font-semibold tracking-widest text-babyBlue dark:nightBlue uppercase">
+                  To be announced
+                </h2>
+                <span href="#" className="font-semibold text-gray-500 lg:mb-0 dark:text-white">
+                  Check back soon
+                </span>
+              </span>
+            </div>
+            <span className="inline-flex justify-start sm:mt-0">
+              {/* <a
+                href="https://twitter.com/krissbaird"
+                className="ml-3 text-babyBlue dark:text-nightBlue hover:text-blue-200 dark:hover:text-blue-100">
+                <svg
+                  fill="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  className="w-5 h-5"
+                  viewBox="0 0 24 24">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
+                </svg>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/krissbaird"
+                className="ml-3 text-babyBlue dark:text-nightBlue hover:text-blue-200 dark:hover:text-blue-100">
+                <svg
+                  fill="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  className="w-5 h-5"
+                  viewBox="0 0 24 24">
+                  <path
+                    stroke="none"
+                    d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+              </a> */}
+            </span>
+            <p className="mx-auto mt-6 text-base leading-relaxed text-gray-500 dark:text-white">
+
+            </p>
+          </div>
+
+{/*  */}
+
+          <div className="flex flex-col w-full max-w-lg mb-12 text-left lg:mx-auto">
+            <div className="inline-flex items-center w-full mb-4">
+              <img
+                alt="blog"
+                src={Locked}
+                className="flex-shrink-0 object-cover object-center w-32 h-32 rounded-full"
+              />
+              <span className="flex flex-col flex-grow pl-3">
+                <h2 className="text-sm font-semibold tracking-widest text-babyBlue dark:nightBlue uppercase">
+                  To be announced
+                </h2>
+                <span href="#" className="font-semibold text-gray-500 lg:mb-0 dark:text-white">
+                Check back soon
+                </span>
+              </span>
+            </div>
+            <span className="inline-flex justify-start sm:mt-0">
+              {/* <a
+                href="https://twitter.com/krissbaird"
+                className="ml-3 text-babyBlue dark:text-nightBlue hover:text-blue-200 dark:hover:text-blue-100">
+                <svg
+                  fill="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  className="w-5 h-5"
+                  viewBox="0 0 24 24">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
+                </svg>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/krissbaird"
+                className="ml-3 text-babyBlue dark:text-nightBlue hover:text-blue-200 dark:hover:text-blue-100">
+                <svg
+                  fill="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  className="w-5 h-5"
+                  viewBox="0 0 24 24">
+                  <path
+                    stroke="none"
+                    d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+              </a> */}
+            </span>
+            <p className="mx-auto mt-6 text-base leading-relaxed text-gray-500 dark:text-white">
+              
+            </p>
+          </div>
+
+{/*  */}
+
         </div>
       </div>
     </section>
