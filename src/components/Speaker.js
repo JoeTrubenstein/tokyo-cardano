@@ -3,6 +3,7 @@ import Yunya from '../images/Yunya.png';
 import Ryu from '../images/Ryu.png';
 import Kriss from '../images/Kriss.png';
 import Yuta from '../images/Yuta.png';
+import Issa from '../images/Issa.png';
 import Locked from '../images/darumaicon-07.png'
 
 const Speakers = () => {
@@ -107,7 +108,7 @@ const Speakers = () => {
               />
               <span className="flex flex-col flex-grow pl-3">
                 <h2 className="text-sm font-semibold tracking-widest text-babyBlue dark:nightBlue uppercase">
-                  Ryu Goto
+                  Ryu
                 </h2>
                 <span href="#" className="font-semibold text-gray-500 lg:mb-0 dark:text-white">
                   Otodojo Nodes
@@ -162,7 +163,7 @@ const Speakers = () => {
               />
               <span className="flex flex-col flex-grow pl-3">
                 <h2 className="text-sm font-semibold tracking-widest text-babyBlue dark:nightBlue uppercase">
-                  Kriss Baird
+                  Kriss
                 </h2>
                 <span href="#" className="font-semibold text-gray-500 lg:mb-0 dark:text-white">
                   Project Catalyst
@@ -261,21 +262,21 @@ const Speakers = () => {
             <div className="inline-flex items-center w-full mb-4">
               <img
                 alt="blog"
-                src={Locked}
+                src={Issa}
                 className="flex-shrink-0 object-cover object-center w-32 h-32 rounded-full"
               />
               <span className="flex flex-col flex-grow pl-3">
                 <h2 className="text-sm font-semibold tracking-widest text-babyBlue dark:nightBlue uppercase">
-                  To be announced
+                  Issa
                 </h2>
                 <span href="#" className="font-semibold text-gray-500 lg:mb-0 dark:text-white">
-                  Check back soon
+                Cardano Ambassador
                 </span>
               </span>
             </div>
             <span className="inline-flex justify-start sm:mt-0">
-              {/* <a
-                href="https://twitter.com/krissbaird"
+              <a
+                href="https://twitter.com/Cardano_ISSA"
                 className="ml-3 text-babyBlue dark:text-nightBlue hover:text-blue-200 dark:hover:text-blue-100">
                 <svg
                   fill="currentColor"
@@ -287,7 +288,7 @@ const Speakers = () => {
                   <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
                 </svg>
               </a>
-              <a
+              {/* <a
                 href="https://www.linkedin.com/in/krissbaird"
                 className="ml-3 text-babyBlue dark:text-nightBlue hover:text-blue-200 dark:hover:text-blue-100">
                 <svg
@@ -305,7 +306,7 @@ const Speakers = () => {
               </a> */}
             </span>
             <p className="mx-auto mt-6 text-base leading-relaxed text-gray-500 dark:text-white">
-
+            Official Cardano Ambassador and Waseda University Student
             </p>
           </div>
 
@@ -359,11 +360,15 @@ const Speakers = () => {
               </a> */}
             </span>
             <p className="mx-auto mt-6 text-base leading-relaxed text-gray-500 dark:text-white">
-              
+             
             </p>
           </div>
 
 {/*  */}
+
+
+
+
 
         </div>
       </div>
