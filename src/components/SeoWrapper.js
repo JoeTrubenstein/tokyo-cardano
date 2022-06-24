@@ -9,6 +9,7 @@
  import PropTypes from "prop-types"
  import { Helmet } from "react-helmet"
  import { useStaticQuery, graphql } from "gatsby"
+ import darumas from "../images/darumapixel-13.png"
  
  const SeoWrapper = ({ description, lang, meta, title }) => {
    const { site } = useStaticQuery(
@@ -46,6 +47,10 @@
            property: `og:title`,
            content: title,
          },
+         {
+          property: `og:image`,
+          content: darumas,
+        },
          {
            property: `og:description`,
            content: metaDescription,
